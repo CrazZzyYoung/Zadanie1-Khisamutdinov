@@ -5,7 +5,6 @@ import org.example.searadar.mr2313.station.Mr2313stationtype;
 import org.junit.Test;
 import ru.oogis.searadar.api.message.RadarSystemDataMessage;
 import ru.oogis.searadar.api.message.SearadarStationMessage;
-import ru.oogis.searadar.api.message.TrackedTargetMessage;
 import ru.oogis.searadar.api.types.IFF;
 import ru.oogis.searadar.api.types.TargetStatus;
 import ru.oogis.searadar.api.types.TargetType;
@@ -64,7 +63,7 @@ public class Mr2313converterTest {
                 ,searadarMessages.get(0).toString());
     }
     @Test
-    public void testWrongMessageFormat(){
+    public void RAVHWtest(){
         message = "$RAVHW, 115.6,T,,,46.0,N,,*71";
         searadarMessages = converter.convert(message);
 
